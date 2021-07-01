@@ -210,7 +210,10 @@ def grubpsha512():
     h = m25.hash(text)
     print ("Grub's PBKDF2 Hash:",h)
 
-
+def fshp():
+    from passlib.hash import  fshp  as m25
+    h = m25.hash(text)
+    print("Fairly Secure Hashed Password:",h)
 
 
 
@@ -253,3 +256,4 @@ cisco()
 djangopsha1()
 djangopsha256()
 grubpsha512()
+fshp()
